@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="/style's/style.css">
+</head>
+<body>
+
+   <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>SOCETY</h1>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Shop</a>
+                    <a href="#" class="nav-link">Featured</a>
+                    <a href="#" class="nav-link">Pages</a>
+                    <a href="#" class="nav-link">Blogs</a>
+                </nav>
+
+                <!-- Search Input (hidden by default) -->
+                <div class="search-container" id="searchContainer">
+                    <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <button class="icon-btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    
+                    <a href="/index's/one.html" class="icon-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                    
+                    <button class="icon-btn" id="heartBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    
+                    <a href="/index's/two.html" class="icon-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Column - Content -->
+                <div class="hero-text">
+                    <p class="hero-subtitle">Style Destination</p>
+                    <h2 class="hero-title">Spring Collection</h2>
+                    <p class="hero-description">
+                        An electronic file provides the same information as a paper file 
+                        and requires the same documents as a paper file.
+                    </p>
+                    
+                    <!-- Buttons -->
+                    <div class="hero-buttons">
+                        <a href="/index's/three.html" class="btn btn-primary">Shop Now</a>
+                        <button class="btn btn-secondary" id="readMoreBtn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Visual Elements -->
+                <div class="hero-visual">
+                    <div class="gradient-circle"></div>
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-content">
+                                <div class="phone-image"></div>
+                                <div class="phone-lines">
+                                    <div class="line line-1"></div>
+                                    <div class="line line-2"></div>
+                                    <div class="line line-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decorative-flowers">
+                        <div class="flowers">
+                            <div class="flower flower-1"></div>
+                            <div class="flower flower-2"></div>
+                            <div class="flower flower-3"></div>
+                        </div>
+                        <div class="stems">
+                            <div class="stem stem-1"></div>
+                            <div class="stem stem-2"></div>
+                            <div class="stem stem-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="modal-content">
+                <h3 class="modal-title">About SOCETY</h3>
+                <div class="modal-text">
+                    <p>
+                        Welcome to SOCETY - your premier style destination for contemporary fashion and lifestyle products.
+                    </p>
+                    <p>
+                        We curate the finest collections from emerging and established designers, bringing you unique pieces that define modern elegance.
+                    </p>
+                    <p>
+                        Our Spring Collection features carefully selected items that blend comfort, style, and sustainability for the conscious consumer.
+                    </p>
+                </div>
+                <button class="btn btn-primary modal-btn" id="modalCloseBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="container">
+        <!-- Featured Products Section -->
+        <div class="featured-section">
+            <div class="product-card" onclick="openModal('smartwatch')">
+                <img src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Smart Watch">
+                <div class="product-info">
+                    <span class="category">ONLINE STORE</span>
+                    <h3>Smart Watch</h3>
+                </div>
+            </div>
+            
+            <div class="product-card" onclick="openModal('console')">
+                <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Gaming Console">
+                <div class="product-info">
+                    <span class="category">NEW ITEMS</span>
+                    <h3>Xbox One</h3>
+                </div>
+            </div>
+            
+            <div class="product-card" onclick="openModal('headphones')">
+                <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Headphones">
+                <div class="product-info">
+                    <span class="category">ONLINE STORE</span>
+                    <h3>Headphones</h3>
+                </div>
+            </div>
+            
+            <div class="product-card" onclick="openModal('smartwatch2')">
+                <img src="https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Smart Watch Elite">
+                <div class="product-info">
+                    <span class="category">NEW ITEMS</span>
+                    <h3>Smart Watch</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Last Collection Section -->
+        <div class="last-collection">
+            <h2>Last Collection</h2>
+            <div class="collection-grid">
+                <div class="collection-item" onclick="openModal('smartphone')">
+                    <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Digital Projector">
+                    <div class="item-details">
+                        <h4>Digital Projector</h4>
+                        <span class="price">$99.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('bluetooth-headphones')">
+                    <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Bluetooth Headphones">
+                    <div class="item-details">
+                        <h4>Bluetooth Headphones</h4>
+                        <span class="price">$199.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('gaming-controller')">
+                    <img src="https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Logitech XBOX Control">
+                    <div class="item-details">
+                        <h4>Logitech XBOX Control</h4>
+                        <span class="price">$89.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('camera')">
+                    <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=200" alt="DSLR Eos">
+                    <div class="item-details">
+                        <h4>DSLR Eos</h4>
+                        <span class="price">$1299.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('earbuds')">
+                    <img src="https://images.pexels.com/photos/8534088/pexels-photo-8534088.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Cancelling Headphones">
+                    <div class="item-details">
+                        <h4>Cancelling Headphones</h4>
+                        <span class="price">$179.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('mouse')">
+                    <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=200" alt="ASUS Mouse 15">
+                    <div class="item-details">
+                        <h4>ASUS Mouse 15</h4>
+                        <span class="price">$89.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('monitor')">
+                    <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Alienware Laptops">
+                    <div class="item-details">
+                        <h4>Alienware Laptops</h4>
+                        <span class="price">$1999.00</span>
+                    </div>
+                </div>
+                
+                <div class="collection-item" onclick="openModal('tablet')">
+                    <img src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Full HD Touchscreen">
+                    <div class="item-details">
+                        <h4>Full HD Touchscreen</h4>
+                        <span class="price">$799.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalCategory"></p>
+                    <p id="modalPrice"></p>
+                    <p id="modalDescription"></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/scripts/script.js"></script>
+</body>
+</html>
